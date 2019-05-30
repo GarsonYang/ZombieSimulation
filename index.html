@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ZombieSim</title>
+
+  <!-- load Bootstrap for styling -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <style>
+    canvas { border: 1px solid black; }
+  </style>
+</head>
+<body class="container">
+
+	<h1>ZombieSim</h1>
+
+  <!-- controls -->
+  <div class="mb-2">
+    <button id="startButton" class="btn btn-outline-success">Start</button>
+    <button id="pauseButton" class="btn btn-outline-warning">Pause</button>
+    <button id="resetButton" class="btn btn-outline-danger">Reset</button>
+    <button id="stepButton" class="btn btn-outline-dark">Step</button>
+    <select id="mapSelect" class="custom-select border border-dark ml-3" style="width:unset;">
+      <option selected disabled>Choose a map</option>
+      <option value="">Random</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+
+  <div>
+    <canvas id="canvas" width=500 height=500></canvas>
+  </div>
+
+  <!-- load script -->
+  <script src="build/bundle.js"></script>
+</body>
+</html>
